@@ -14,5 +14,21 @@
   <input type="number" id="breadth" placeholder="Enter breadth" /><br><br>
 
   <button onclick="calculatePerimeter()">Calculate Perimeter</button>
+  <h3 id="result"></h3>
+
+  <script>
+    function calculatePerimeter() {
+      const length = parseFloat(document.getElementById('length').value);
+      const breadth = parseFloat(document.getElementById('breadth').value);
+
+      if (isNaN(length) || isNaN(breadth)) {
+        document.getElementById('result').innerText = "Please enter valid numbers!";
+        return;
+      }
+
+      const perimeter = 2 * (length + breadth);
+      document.getElementById('result').innerText = Perimeter: ${perimeter};
+    }
+    </script>
 </body>
 </html>
