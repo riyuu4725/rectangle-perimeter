@@ -10,7 +10,14 @@
   <input type="number" id="breadth" placeholder="Enter breadth"></br><br>
   <button onclick="calculatePerimeter()">Calculate Perimeter</button>
   <p id="result"></p>
-
+  <script>
+    function calculatePerimeter() {
+      var length = parseFloat(document.getElementById("length").value);
+      var breadth = parseFloat(document.getElementById("breadth").value);
+      var perimeter = 2 * (length + breadth);
+      document.getElementById("result").innerText = "Perimeter: " + perimeter;
+    }
+  </script>
 
 </body>
 </html>
