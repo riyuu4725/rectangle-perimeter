@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #be8989;
   padding: 20px;
   text-align: center;
 }
@@ -15,14 +15,14 @@ input {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007BFF;
+  background-color: #702fc6;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #0056b3;
+  background-color: #ebee0b;
 }
 #result {
   margin-top: 20px;
