@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rectangle Perimeter Calculate</title>
+  <title>Rectangle Perimeter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rectangle Perimeter Calculate</h1>
-    <label for="length">Length:</label>
-  <input type="number" id="length" placeholder="Enter length" /><br><br>
-
-  <label for="breadth">Breadth:</label>
-  <input type="number" id="breadth" placeholder="Enter breadth" /><br><br>
-
+  <h1>Calculate The Perimeter Of Rectangle </h1>
+  <input type="number" id="length" placeholder="Enter length"></br><br>
+  <input type="number" id="breadth" placeholder="Enter breadth"></br><br>
   <button onclick="calculatePerimeter()">Calculate Perimeter</button>
-  <h3 id="result"></h3>
+  <p id="result"></p>
 
-  <script>
-    function calculatePerimeter() {
-      const length = parseFloat(document.getElementById('length').value);
-      const breadth = parseFloat(document.getElementById('breadth').value);
 
-      if (isNaN(length) || isNaN(breadth)) {
-        document.getElementById('result').innerText = "Please enter valid numbers!";
-        return;
-      }
-
-      const perimeter = 2 * (length + breadth);
-      document.getElementById('result').innerText = Perimeter: ${perimeter};
-    }
-    </script>
 </body>
 </html>
